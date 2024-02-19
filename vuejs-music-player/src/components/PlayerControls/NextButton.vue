@@ -1,13 +1,18 @@
 <template>
     <div>
-        <button>Next</button>
+        <button v-on:click="pressNext()">Next</button>
     </div>
 </template>
 
 <script>
 
 export default {
-    name: "NextButton"
+    name: "NextButton",
+    methods: {
+        pressNext() {
+            console.log('You pressed Next!')
+        }
+    }
 }
 
 </script>

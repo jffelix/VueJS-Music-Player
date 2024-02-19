@@ -10,7 +10,7 @@ export default {
     name: "PlayButton",
     methods: {
         pressPlay() {
-            console.log("You pressed play!")
+            console.log("You pressed Play!")
         }
     }
 }
