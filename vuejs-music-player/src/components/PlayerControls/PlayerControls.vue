@@ -1,14 +1,8 @@
 <template>
     <div>
         <h2>PlayerControls Component</h2>
-    </div>
-    <div>
         <PrevButton />
-    </div>
-    <div>
         <PlayButton />
-    </div>
-    <div>
         <NextButton />
     </div>
 </template>
