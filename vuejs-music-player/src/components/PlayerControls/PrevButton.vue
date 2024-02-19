@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>PrevButton Component</h3>
+        <button>Previous</button>
     </div>
 </template>
 

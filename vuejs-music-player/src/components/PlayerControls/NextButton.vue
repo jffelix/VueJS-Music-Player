@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>NextButton Component</h3>
+        <button>Next</button>
     </div>
 </template>
 
