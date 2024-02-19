@@ -1,13 +1,18 @@
 <template>
     <div>
-        <button>Play</button>
+        <button v-on:click="pressPlay()">Play</button>
     </div>
 </template>
 
 <script>
 
 export default {
-    name: "PlayButton"
+    name: "PlayButton",
+    methods: {
+        pressPlay() {
+            console.log("You pressed play!")
+        }
+    }
 }
 
 </script>
