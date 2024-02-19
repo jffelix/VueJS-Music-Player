@@ -1,3 +1,13 @@
 <template>
-    <h1>Hello World!</h1>
+    <div>
+        <h1>Main Component</h1>
+    </div>
 </template>
+
+<script>
+export default {
+  name: 'Main',
+  props: {
+  }
+}
+</script>
