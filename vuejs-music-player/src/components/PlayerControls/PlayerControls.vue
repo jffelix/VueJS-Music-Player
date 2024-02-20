@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div>
+        <!-- <div>
             <h2>PlayerControls Component</h2>
-        </div>
+        </div> -->
         <div>
             <PrevButton />
         </div>
