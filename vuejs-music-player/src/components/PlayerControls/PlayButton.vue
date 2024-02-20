@@ -1,8 +1,11 @@
 <template>
     <div>
-        <button 
-        v-on:click="pressPlay()"
-        >Play</button>
+        <div v-if="isSongPlaying">
+            <button v-on:click="pressPlay()">Pause</button>
+        </div>
+        <div v-else>
+            <button v-on:click="pressPlay()">Play</button>
+        </div>
     </div>
 </template>
 
@@ -18,8 +21,8 @@ export default {
     methods: {
         pressPlay() {
             this.isSongPlaying = !this.isSongPlaying
-            console.log('isSongPlaying: ', this.isSongPlaying);
-            console.log("You pressed Play!")
+            // console.log('isSongPlaying: ', this.isSongPlaying);
+            // console.log("You pressed Play!")
         }
     }
 }
