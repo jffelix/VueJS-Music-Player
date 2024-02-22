@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AlbumCover from './AlbumCover.vue'
+// import AlbumCover from './AlbumCover.vue'
 
 export default {
     name: "SongList",
