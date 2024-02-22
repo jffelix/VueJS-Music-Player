@@ -17,12 +17,13 @@ export default {
     AlbumCover,
     PlayerControls
   },
-  props: {
-  },
   data() {
     return {
-      songList: sampleData
+      songList: []
     }
+  },
+  created() {
+    this.songList = sampleData
   }
 }
 </script>
