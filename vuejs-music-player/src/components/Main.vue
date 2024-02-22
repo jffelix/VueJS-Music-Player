@@ -9,6 +9,7 @@
 <script>
 import PlayerControls from './PlayerControls/PlayerControls.vue'
 import AlbumCover from './ArtistInfo/AlbumCover.vue'
+import sampleData from '../assets/sampleData.js'
 
 export default {
   name: 'Main',
@@ -17,6 +18,11 @@ export default {
     PlayerControls
   },
   props: {
+  },
+  data() {
+    return {
+      songList: sampleData
+    }
   }
 }
 </script>
