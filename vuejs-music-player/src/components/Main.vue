@@ -1,7 +1,9 @@
 <template>
     <div>
         <h1>VueJS Music Player</h1>
-        <SongList />
+        <SongList
+          :songList="songList"
+        />
         <PlayerControls />
     </div>
 </template>
@@ -22,6 +24,7 @@ export default {
       songList: []
     }
   },
+  // Need to check if data is successfully imported here
   created() {
     this.songList = sampleData
   }
