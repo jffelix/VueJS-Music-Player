@@ -10,6 +10,12 @@ const testData = [
         artist: "FISHER",
         songFile: "sampleSong2.mp3",
         albumCoverFile: "sampleAlbumCover2.png"
+    },
+    {
+        song: "Never Sleep Alone",
+        artist: "Kaskade",
+        songFile: "sampleSong3.mp3",
+        albumCoverFile: "sampleAlbumCover3.png"
     }
 ]
 
