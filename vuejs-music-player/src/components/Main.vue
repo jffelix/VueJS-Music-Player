@@ -5,8 +5,8 @@
           :songList="this.songList"
         />
         <PlayerControls v-on:updateItem="nextSong"/>
-        <button v-on:click="prevSong">Test Decrement Index</button>
-        <button v-on:click="nextSong">Test Increment Index</button>
+        <!-- <button v-on:click="prevSong">Test Decrement Index</button>
+        <button v-on:click="nextSong">Test Increment Index</button> -->
     </div>
 </template>
 
