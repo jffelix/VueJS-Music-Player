@@ -10,7 +10,7 @@
             <PlayButton />
         </div>
         <div>
-            <NextButton />
+            <NextButton v-on:click="nextSong"/>
         </div>
     </div>
 </template>
@@ -26,6 +26,7 @@ export default {
         PrevButton,
         PlayButton,
         NextButton
-    }
+    },
+    emits: ["updateItem"]
 }
 </script>

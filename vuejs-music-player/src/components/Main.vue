@@ -4,7 +4,9 @@
         <SongList
           :songList="this.songList"
         />
-        <PlayerControls />
+        <PlayerControls v-on:updateItem="nextSong"/>
+        <button v-on:click="prevSong">Test Decrement Index</button>
+        <button v-on:click="nextSong">Test Increment Index</button>
     </div>
 </template>
 
@@ -26,7 +28,19 @@ export default {
   },
   // Need to check if data is successfully imported
   created() {
-    this.songList = sampleData
+    this.songList = sampleData,
+    this.songIndex = 0
+  },
+  methods: {
+    prevSong() {
+      this.songIndex--
+      console.log("songIndex: ", this.songIndex);
+    },
+    nextSong() {
+      this.songIndex++
+      console.log("songIndex: ", this.songIndex);
+      // console.log("You clicked nextSong!")
+    }
   }
 }
 </script>

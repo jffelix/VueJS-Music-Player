@@ -10,7 +10,7 @@ export default {
     name: "NextButton",
     methods: {
         pressNext() {
-            console.log('You pressed Next!')
+            // console.log('You pressed Next!')
         }
     }
 }
