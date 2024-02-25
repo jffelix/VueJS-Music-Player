@@ -34,11 +34,11 @@ export default {
   methods: {
     prevSong() {
       this.songIndex--
-      // console.log("songIndex: ", this.songIndex);
+      console.log("songIndex: ", this.songIndex);
     },
     nextSong() {
       this.songIndex++
-      // console.log("songIndex: ", this.songIndex);
+      console.log("songIndex: ", this.songIndex);
       // console.log("You clicked nextSong!")
     }
   }
