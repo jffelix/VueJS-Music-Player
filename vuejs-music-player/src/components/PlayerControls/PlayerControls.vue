@@ -27,6 +27,11 @@ export default {
         PlayButton,
         NextButton
     },
-    emits: ["updateItem"]
+    emits: ["addItem"],
+    methods: {
+        nextSong() {
+            this.$emit("addItem");
+        }
+    }
 }
 </script>

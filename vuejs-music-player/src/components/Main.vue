@@ -4,7 +4,7 @@
         <SongList
           :songList="this.songList"
         />
-        <PlayerControls v-on:updateItem="nextSong"/>
+        <PlayerControls v-on:addItem="addCounter"/>
         <!-- <button v-on:click="prevSong">Test Decrement Index</button>
         <button v-on:click="nextSong">Test Increment Index</button> -->
     </div>
@@ -32,11 +32,11 @@ export default {
     this.songIndex = 0
   },
   methods: {
-    prevSong() {
+    subtractCounter() {
       this.songIndex--
       console.log("songIndex: ", this.songIndex);
     },
-    nextSong() {
+    addCounter() {
       this.songIndex++
       console.log("songIndex: ", this.songIndex);
       // console.log("You clicked nextSong!")
