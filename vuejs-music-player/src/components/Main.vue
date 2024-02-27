@@ -3,6 +3,7 @@
         <h1>VueJS Music Player</h1>
         <SongList
           :songList="this.songList"
+          :songIndex="this.songIndex"
         />
         <PlayerControls 
           v-on:addItem="addCounter"
@@ -29,8 +30,12 @@ export default {
       songList: []
     }
   },
-  // Need to check if data is successfully imported
-  created() {
+  // // Need to check if data is successfully imported
+  // created() {
+  //   this.songList = sampleData,
+  //   this.songIndex = 0
+  // },
+  data() {
     this.songList = sampleData,
     this.songIndex = 0
   },
