@@ -4,7 +4,7 @@
             <h2>PlayerControls Component</h2>
         </div> -->
         <div>
-            <PrevButton />
+            <PrevButton v-on:click="prevSong"/>
         </div>
         <div>
             <PlayButton />
@@ -27,8 +27,11 @@ export default {
         PlayButton,
         NextButton
     },
-    emits: ["addItem"],
+    emits: ["addItem", "subtractItem"],
     methods: {
+        prevSong() {
+            this.$emit("subtractItem");
+        },
         nextSong() {
             this.$emit("addItem");
         }

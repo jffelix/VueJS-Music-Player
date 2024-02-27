@@ -4,7 +4,10 @@
         <SongList
           :songList="this.songList"
         />
-        <PlayerControls v-on:addItem="addCounter"/>
+        <PlayerControls 
+          v-on:addItem="addCounter"
+          v-on:subtractItem="subtractCounter"
+          />
         <!-- <button v-on:click="prevSong">Test Decrement Index</button>
         <button v-on:click="nextSong">Test Increment Index</button> -->
     </div>
