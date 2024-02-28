@@ -7,6 +7,7 @@
         </div> -->
         <div>
             <!-- <p>{{songList[songIndex].song}}</p> -->
+            <p>{{songIndex.currentIndex}}</p>
         </div>
     </div>
 </template>

@@ -26,20 +26,24 @@ export default {
     PlayerControls
   },
   data() {
-    this.songList = sampleData,
-    this.songIndex = 0
     return {
-      songList: []
+      songList: sampleData,
+      songIndex: {}
+    }
+  },
+  created() {
+    this.songIndex = {
+      currentIndex: 0
     }
   },
   methods: {
     subtractCounter() {
-      this.songIndex--
-      console.log("songIndex: ", this.songIndex);
+      this.songIndex.currentIndex--
+      console.log("songIndex: ", this.songIndex.currentIndex);
     },
     addCounter() {
-      this.songIndex++
-      console.log("songIndex: ", this.songIndex);
+      this.songIndex.currentIndex++
+      console.log("songIndex: ", this.songIndex.currentIndex);
       // console.log("You clicked nextSong!")
     }
   }
