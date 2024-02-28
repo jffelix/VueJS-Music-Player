@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h2>Song List Component</h2>
         <div>
             <p>{{songList[songIndex.currentIndex].song}}</p>
             <p>{{songList[songIndex.currentIndex].artist}}</p>
