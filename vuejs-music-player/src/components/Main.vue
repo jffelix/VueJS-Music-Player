@@ -38,13 +38,16 @@ export default {
   },
   methods: {
     subtractCounter() {
-      this.songIndex.currentIndex--
+      if (this.songIndex.currentIndex > 0) {
+        this.songIndex.currentIndex--
+      }
       console.log("songIndex: ", this.songIndex.currentIndex);
     },
     addCounter() {
-      this.songIndex.currentIndex++
+      if (this.songIndex.currentIndex < this.songList.length - 1) {
+        this.songIndex.currentIndex++
+      }
       console.log("songIndex: ", this.songIndex.currentIndex);
-      // console.log("You clicked nextSong!")
     }
   }
 }
