@@ -26,18 +26,11 @@ export default {
     PlayerControls
   },
   data() {
+    this.songList = sampleData,
+    this.songIndex = 0
     return {
       songList: []
     }
-  },
-  // // Need to check if data is successfully imported
-  // created() {
-  //   this.songList = sampleData,
-  //   this.songIndex = 0
-  // },
-  data() {
-    this.songList = sampleData,
-    this.songIndex = 0
   },
   methods: {
     subtractCounter() {
