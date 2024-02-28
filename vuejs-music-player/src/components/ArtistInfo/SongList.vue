@@ -1,13 +1,9 @@
 <template>
     <div>
         <h2>Song List Component</h2>
-        <!-- <div v-for="(song, index) in songList">
-            <p>{{song.song}}</p>
-            <p>{{song.artist}}</p>
-        </div> -->
         <div>
             <p>{{songList[songIndex.currentIndex].song}}</p>
-            <!-- <p>{{songIndex.currentIndex}}</p> -->
+            <p>{{songList[songIndex.currentIndex].artist}}</p>
         </div>
     </div>
 </template>
