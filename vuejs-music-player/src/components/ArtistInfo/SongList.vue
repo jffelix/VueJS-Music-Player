@@ -6,8 +6,8 @@
             <p>{{song.artist}}</p>
         </div> -->
         <div>
-            <!-- <p>{{songList[songIndex].song}}</p> -->
-            <p>{{songIndex.currentIndex}}</p>
+            <p>{{songList[songIndex.currentIndex].song}}</p>
+            <!-- <p>{{songIndex.currentIndex}}</p> -->
         </div>
     </div>
 </template>
