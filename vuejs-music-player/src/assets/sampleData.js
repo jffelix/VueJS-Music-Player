@@ -1,3 +1,6 @@
+import Starlight from "./sampleSongs/Martin Garrix, Dubvision ft. Shaun Farrugia - Starlight (Keep Me Afloat) (Extended Mix).mp3"
+import Atmosphere from "./sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3"
+
 const testData = [
     {
         song: "Funky Town",
@@ -8,13 +11,13 @@ const testData = [
     {
         song: "Atmosphere",
         artist: "FISHER",
-        songFile: "sampleSong2.mp3",
+        songFile: Atmosphere,
         albumCoverFile: "sampleAlbumCover2.png"
     },
     {
         song: "Starlight",
         artist: "Martin Garrix & Dubvision",
-        songFile: "sampleSong3.mp3",
+        songFile: Starlight,
         albumCoverFile: "sampleAlbumCover3.png"
     }
 ]
