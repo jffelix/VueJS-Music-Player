@@ -12,8 +12,8 @@ const testData = [
         albumCoverFile: "sampleAlbumCover2.png"
     },
     {
-        song: "Never Sleep Alone",
-        artist: "Kaskade",
+        song: "Starlight",
+        artist: "Martin Garrix & Dubvision",
         songFile: "sampleSong3.mp3",
         albumCoverFile: "sampleAlbumCover3.png"
     }
