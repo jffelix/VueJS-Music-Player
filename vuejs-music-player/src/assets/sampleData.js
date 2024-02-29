@@ -3,6 +3,7 @@ import Atmosphere from "./sampleSongs/FISHER x Kita Alexander - Atmosphere (Exte
 import MoveYourBody from "./sampleSongs/Öwnboss & Sevek - Move Your Body (Extended Mix).mp3"
 
 // import album covers here
+import StarlightCover from "./sampleAlbumCovers/Martin Garrix - Starlight.jpg"
 
 const testData = [
     {
@@ -21,7 +22,7 @@ const testData = [
         song: "Starlight",
         artist: "Martin Garrix & Dubvision",
         songFile: Starlight,
-        albumCoverFile: "sampleAlbumCover3.png"
+        albumCoverFile: StarlightCover
     }
 ]
 
