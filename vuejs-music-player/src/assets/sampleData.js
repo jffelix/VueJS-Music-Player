@@ -2,6 +2,8 @@ import Starlight from "./sampleSongs/Martin Garrix, Dubvision ft. Shaun Farrugia
 import Atmosphere from "./sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3"
 import MoveYourBody from "./sampleSongs/Öwnboss & Sevek - Move Your Body (Extended Mix).mp3"
 
+// import album covers here
+
 const testData = [
     {
         song: "Atmosphere",
