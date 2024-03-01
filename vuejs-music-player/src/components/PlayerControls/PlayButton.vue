@@ -25,7 +25,11 @@ export default {
     methods: {
         pressPlay() {
             this.isSongPlaying = !this.isSongPlaying
-            console.log("current song: ", this.songList[this.songIndex.currentIndex].song)
+            if (this.isSongPlaying) {
+                console.log("current song: ", this.songList[this.songIndex.currentIndex].song)
+            } else {
+                console.log("Song paused")
+            }
         }
     }
 }
