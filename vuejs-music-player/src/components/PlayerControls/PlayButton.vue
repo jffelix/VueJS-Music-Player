@@ -11,11 +11,14 @@
 
 <script>
 
+const selectedAudio = require("../../assets/sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3")
+
 export default {
     name: "PlayButton",
     data() {
         return {
-            isSongPlaying: false
+            isSongPlaying: false,
+            selectedAudio
         }
     },
     props: {
@@ -24,11 +27,23 @@ export default {
     },
     methods: {
         pressPlay() {
+            // let audio = this.songList[this.songIndex.currentIndex].songFile
+            // console.log("audio file: ", audio);
             this.isSongPlaying = !this.isSongPlaying
+            // console.log("selectedAudio: ", selectedAudio)
+
+            let audio = new Audio(this.selectedAudio);
+            
             if (this.isSongPlaying) {
-                console.log("current song: ", this.songList[this.songIndex.currentIndex].song)
+                audio.addEventListener("canplaythrough", () => { 
+                    audio.play();
+                }) 
+                // console.log("current song: ", this.songList[this.songIndex.currentIndex].song)
             } else {
-                console.log("Song paused")
+                // audio.addEventListener("canplaythrough", () => { 
+                //     audio.pause();
+                // }) 
+                // console.log("Song paused");
             }
         }
     }
