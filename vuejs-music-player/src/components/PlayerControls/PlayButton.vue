@@ -29,7 +29,6 @@ export default {
     methods: {
         pressPlay() {
             let audio = this.songList[this.songIndex.currentIndex].songFile
-            // let audio = this.songList[this.songIndex.currentIndex]
 
             console.log("audio file: ", audio);
             // console.log("selectedAudio: ", selectedAudio);
