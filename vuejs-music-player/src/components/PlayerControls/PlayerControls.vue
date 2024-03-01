@@ -27,6 +27,10 @@ export default {
         PlayButton,
         NextButton
     },
+    props: {
+        songList: Array,
+        songIndex: Number
+    },
     emits: ["addItem", "subtractItem"],
     methods: {
         prevSong() {

@@ -8,6 +8,8 @@
         <PlayerControls 
           v-on:addItem="addCounter"
           v-on:subtractItem="subtractCounter"
+          :songList="this.songList"
+          :songIndex="this.songIndex"
         />
     </div>
 </template>
