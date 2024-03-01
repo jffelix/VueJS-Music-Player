@@ -11,14 +11,15 @@
 
 <script>
 
-const selectedAudio = require("../../assets/sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3")
+// const selectedAudio = require("../assets/sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3")
+// const selectedAudio = require(`../../assets/sampleSongs/${this.songList[this.songIndex.currentIndex].songFile}`)
 
 export default {
     name: "PlayButton",
     data() {
         return {
-            isSongPlaying: false,
-            selectedAudio
+            isSongPlaying: false
+            // selectedAudio
         }
     },
     props: {
@@ -27,22 +28,22 @@ export default {
     },
     methods: {
         pressPlay() {
-            // let audio = this.songList[this.songIndex.currentIndex].songFile
-            // console.log("audio file: ", audio);
-            this.isSongPlaying = !this.isSongPlaying
-            // console.log("selectedAudio: ", selectedAudio)
+            let audio = this.songList[this.songIndex.currentIndex].songFile
+            // let audio = this.songList[this.songIndex.currentIndex]
 
-            let audio = new Audio(this.selectedAudio);
-            
+            console.log("audio file: ", audio);
+            // console.log("selectedAudio: ", selectedAudio);
+
+            this.isSongPlaying = !this.isSongPlaying
+            // let audio = new Audio(this.selectedAudio);
+
             if (this.isSongPlaying) {
-                audio.addEventListener("canplaythrough", () => { 
-                    audio.play();
-                }) 
+                // audio.addEventListener("canplaythrough", () => { 
+                //     audio.play();
+                // })
                 // console.log("current song: ", this.songList[this.songIndex.currentIndex].song)
             } else {
-                // audio.addEventListener("canplaythrough", () => { 
-                //     audio.pause();
-                // }) 
+                // audio.pause();
                 // console.log("Song paused");
             }
         }
