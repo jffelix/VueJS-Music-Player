@@ -18,11 +18,14 @@ export default {
             isSongPlaying: false
         }
     },
+    props: {
+        songList: Array,
+        songIndex: Number
+    },
     methods: {
         pressPlay() {
             this.isSongPlaying = !this.isSongPlaying
-            // console.log('isSongPlaying: ', this.isSongPlaying);
-            // console.log("You pressed Play!")
+            console.log("current song: ", this.songList[this.songIndex.currentIndex].song)
         }
     }
 }

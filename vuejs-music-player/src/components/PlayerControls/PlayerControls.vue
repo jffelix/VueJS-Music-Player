@@ -7,7 +7,10 @@
             <PrevButton v-on:click="prevSong"/>
         </div>
         <div>
-            <PlayButton v-on:click="playSong"/>
+            <PlayButton 
+                :songList="this.songList"
+                :songIndex="this.songIndex"
+            />
         </div>
         <div>
             <NextButton v-on:click="nextSong"/>
@@ -35,9 +38,6 @@ export default {
     methods: {
         prevSong() {
             this.$emit("subtractItem");
-        },
-        playSong() {
-            console.log("you clicked Play!");
         },
         nextSong() {
             this.$emit("addItem");
