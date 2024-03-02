@@ -19,6 +19,7 @@ const testData = [
         song: "Atmosphere",
         artist: "FISHER",
         songFile: Atmosphere,
+        // songFile: "../assets/sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3",
         albumCoverFile: "sampleAlbumCover2.png"
     },
     {
