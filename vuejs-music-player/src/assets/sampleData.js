@@ -1,37 +1,20 @@
-// problem is every import or require adds "./media" and series of numbers to filepath
-
-// probably can't store an mp3 in an object
-
-
-import Starlight from "./sampleSongs/Martin Garrix, Dubvision ft. Shaun Farrugia - Starlight (Keep Me Afloat) (Extended Mix).mp3"
-// const Starlight = require("../sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3")
-
-import Atmosphere from "./sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3"
-// const Atmosphere = require("./sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3")
-
-import MoveYourBody from "./sampleSongs/Öwnboss & Sevek - Move Your Body (Extended Mix).mp3"
-
-// // import album covers here
-// import StarlightCover from "../sampleAlbumCovers/Martin Garrix - Starlight.jpg"
-
 const testData = [
     {
         song: "Atmosphere",
         artist: "FISHER",
-        songFile: Atmosphere,
-        // songFile: "../sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3",
+        songFile: "FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3",
         albumCoverFile: "sampleAlbumCover2.png"
     },
     {
         song: "Move Your Body",
         artist: "Ownboss & Sevek",
-        songFile: MoveYourBody,
+        songFile: "Öwnboss & Sevek - Move Your Body (Extended Mix).mp3",
         albumCoverFile: "sampleAlbumCover.png"
     },
     {
         song: "Starlight",
         artist: "Martin Garrix & Dubvision",
-        songFile: Starlight,
+        songFile: "Martin Garrix, Dubvision ft. Shaun Farrugia - Starlight (Keep Me Afloat) (Extended Mix).mp3",
         albumCoverFile: "sampleAlbumCover.png"
     }
 ]

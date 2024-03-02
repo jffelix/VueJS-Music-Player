@@ -11,8 +11,7 @@
 
 <script>
 
-// const selectedAudio = require("../assets/sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3")
-// const selectedAudio = require(`../../assets/sampleSongs/${this.songList[this.songIndex.currentIndex].songFile}`)
+// const selectedAudio = require("../../assets/sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3")
 
 export default {
     name: "PlayButton",
@@ -28,18 +27,19 @@ export default {
     },
     methods: {
         pressPlay() {
-            let audio = this.songList[this.songIndex.currentIndex].songFile
+            // let audio = this.songList[this.songIndex.currentIndex].songFile
+            const selectedAudio = require(`../../assets/sampleSongs/${this.songList[this.songIndex.currentIndex].songFile}`)
 
-            console.log("audio file: ", audio);
+            // console.log("audio file: ", audio);
             // console.log("selectedAudio: ", selectedAudio);
 
             this.isSongPlaying = !this.isSongPlaying
-            // let audio = new Audio(this.selectedAudio);
+            let audioFile = new Audio(selectedAudio);
 
             if (this.isSongPlaying) {
-                // audio.addEventListener("canplaythrough", () => { 
-                //     audio.play();
-                // })
+                audioFile.addEventListener("canplaythrough", () => { 
+                    audioFile.play();
+                })
                 // console.log("current song: ", this.songList[this.songIndex.currentIndex].song)
             } else {
                 // audio.pause();
