@@ -16,8 +16,7 @@ export default {
     data() {
         return {
             isSongPlaying: false,
-            currentSong: null,
-            testSong: null
+            currentSong: null
             // selectedAudio
 
         }
