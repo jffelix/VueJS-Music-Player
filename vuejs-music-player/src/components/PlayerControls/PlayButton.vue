@@ -11,9 +11,6 @@
 
 <script>
 
-// const selectedAudio = require("../../assets/sampleSongs/FISHER x Kita Alexander - Atmosphere (Extended Mix).mp3")
-// let selectedAudio = require(`../../assets/sampleSongs/${this.songList[this.songIndex.currentIndex].songFile}`)
-
 export default {
     name: "PlayButton",
     data() {
