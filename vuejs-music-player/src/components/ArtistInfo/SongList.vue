@@ -43,7 +43,9 @@ export default {
             audioFile.onloadedmetadata = ()=> {
                 this.audioDuration = audioFile.duration
             }
-            
+
+            // will need to convert to mm/ss form here
+
             console.log("getAudioDuration: ", this.audioDuration);
             return this.audioDuration
         }
