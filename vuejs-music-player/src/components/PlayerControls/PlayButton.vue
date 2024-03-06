@@ -36,12 +36,6 @@ export default {
             let audioFile = new Audio(this.currentSong);
             this.currentSong = audioFile
 
-
-            audioFile.onloadedmetadata = ()=> {
-                console.log("song duration: ", audioFile.duration);
-            }
-            
-
             if (this.isSongPlaying) {
                 this.currentSong.play();
             }

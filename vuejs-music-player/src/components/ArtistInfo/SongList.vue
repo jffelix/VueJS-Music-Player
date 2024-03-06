@@ -4,6 +4,9 @@
             <img :src="getImage()"/>
         </div>
         <div>
+            <p>{{this.audioDuration}}</p>
+        </div>
+        <div>
             <p>{{songList[songIndex.currentIndex].song}}</p>
             <p>{{songList[songIndex.currentIndex].artist}}</p>
         </div>
@@ -18,12 +21,26 @@ export default {
     name: "SongList",
     components: {
     },
+    data() {
+        return {
+            audioDuration: null
+        }
+    },
     props: {
         songList: Array,
         songIndex: Number
     },
     methods: {
         getImage() {
+            const selectedAudio = require(`../../assets/sampleSongs/${this.songList[this.songIndex.currentIndex].songFile}`)
+
+            let audioFile = new Audio(selectedAudio);
+
+            audioFile.onloadedmetadata = ()=> {
+                this.audioDuration = audioFile.duration
+            }
+            console.log("audioDuration: ", this.audioDuration);
+
             return require(`../../assets/sampleAlbumCovers/${this.songList[this.songIndex.currentIndex].albumCoverFile}`)
             // console.log("cover: ", cover)
         }
