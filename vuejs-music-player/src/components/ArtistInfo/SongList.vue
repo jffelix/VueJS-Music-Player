@@ -4,7 +4,7 @@
             <img :src="getImage()"/>
         </div>
         <div>
-            <p>{{this.audioDuration}}</p>
+            <p>{{getAudioDuration()}}</p>
         </div>
         <div>
             <p>{{songList[songIndex.currentIndex].song}}</p>
@@ -32,6 +32,10 @@ export default {
     },
     methods: {
         getImage() {
+            return require(`../../assets/sampleAlbumCovers/${this.songList[this.songIndex.currentIndex].albumCoverFile}`)
+            // console.log("cover: ", cover)
+        },
+        getAudioDuration () {
             const selectedAudio = require(`../../assets/sampleSongs/${this.songList[this.songIndex.currentIndex].songFile}`)
 
             let audioFile = new Audio(selectedAudio);
@@ -39,10 +43,9 @@ export default {
             audioFile.onloadedmetadata = ()=> {
                 this.audioDuration = audioFile.duration
             }
-            console.log("audioDuration: ", this.audioDuration);
-
-            return require(`../../assets/sampleAlbumCovers/${this.songList[this.songIndex.currentIndex].albumCoverFile}`)
-            // console.log("cover: ", cover)
+            
+            console.log("getAudioDuration: ", this.audioDuration);
+            return this.audioDuration
         }
     }
 }
