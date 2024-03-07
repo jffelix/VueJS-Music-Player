@@ -4,6 +4,9 @@
             <img :src="getImage()"/>
         </div>
         <div>
+            <p>{{getCurrentSongTime()}}</p>
+        </div>
+        <div>
             <p>{{getAudioDuration()}}</p>
         </div>
         <div>
@@ -54,6 +57,9 @@ export default {
             var seconds = Math.floor(s % 3600 % 60)
 
             return minutes.toString() + ":" + seconds.toString();
+        },
+        getCurrentSongTime() {
+            return this.secondsToMinutes(this.currentSongTime);
         }
     }
 }
