@@ -46,8 +46,17 @@ export default {
 
             // will need to convert to mm/ss form here
 
-            console.log("getAudioDuration: ", this.audioDuration);
-            return this.audioDuration
+            // console.log("getAudioDuration: ", this.audioDuration);
+            this.secondsToMinutes(this.audioDuration);
+
+            return this.audioDuration;
+        },
+        secondsToMinutes(s) {
+            s = Number(s);
+            var minutes = Math.floor(s % 3600 / 60);
+            var seconds = Math.floor(s % 3600 % 60)
+
+            console.log(minutes + ":" + seconds);
         }
     }
 }
