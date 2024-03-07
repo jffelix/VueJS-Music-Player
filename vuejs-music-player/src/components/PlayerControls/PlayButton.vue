@@ -39,6 +39,8 @@ export default {
             if (this.isSongPlaying) {
                 this.currentSong.play();
             }
+
+            // add increment counter for current song time here
         },
         // currently stops song. No pause
         pressPause() {
