@@ -8,6 +8,7 @@
         </div>
         <div>
             <PlayButton 
+                v-on:click="addTime"
                 :songList="this.songList"
                 :songIndex="this.songIndex"
             />
@@ -34,13 +35,16 @@ export default {
         songList: Array,
         songIndex: Number
     },
-    emits: ["addItem", "subtractItem"],
+    emits: ["addItem", "subtractItem", "incrementTime"],
     methods: {
         prevSong() {
             this.$emit("subtractItem");
         },
         nextSong() {
             this.$emit("addItem");
+        },
+        addTime() {
+            this.$emit("incrementTime")
         }
     }
 }
