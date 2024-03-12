@@ -29,7 +29,8 @@ export default {
   data() {
     return {
       songList: sampleData,
-      songIndex: {}
+      songIndex: {},
+      songTime: 0
     }
   },
   created() {
@@ -51,7 +52,8 @@ export default {
       // console.log("songIndex: ", this.songIndex.currentIndex);
     },
     incrementTime() {
-      console.log("You invoked incrementTime!");
+      this.songTime++
+      console.log("songTime: ", this.songTime);
     }
   }
 }

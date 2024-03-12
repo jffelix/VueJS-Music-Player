@@ -8,7 +8,7 @@
         </div>
         <div>
             <PlayButton 
-                v-on:click="addTime"
+                v-on:addTime="addTime"
                 :songList="this.songList"
                 :songIndex="this.songIndex"
             />
@@ -44,7 +44,7 @@ export default {
             this.$emit("addItem");
         },
         addTime() {
-            this.$emit("incrementTime")
+            this.$emit("incrementTime");
         }
     }
 }

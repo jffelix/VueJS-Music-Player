@@ -25,6 +25,7 @@ export default {
         songList: Array,
         songIndex: Number
     },
+    emits: ["addTime"],
     methods: {
         pressPlay() {
             // let audio = this.songList[this.songIndex.currentIndex].songFile
@@ -37,6 +38,7 @@ export default {
             this.currentSong = audioFile
 
             if (this.isSongPlaying) {
+                this.$emit("addTime");
                 this.currentSong.play();
             }
 
