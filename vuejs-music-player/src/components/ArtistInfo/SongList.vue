@@ -60,9 +60,6 @@ export default {
         },
         getCurrentSongTime() {
             return this.secondsToMinutes(this.currentSongTime);
-        },
-        incrementTime() {
-            console.log("You invoked incrementTime!")
         }
     }
 }

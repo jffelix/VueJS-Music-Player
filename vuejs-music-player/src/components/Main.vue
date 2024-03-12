@@ -48,6 +48,9 @@ export default {
         this.songIndex.currentIndex++
       }
       // console.log("songIndex: ", this.songIndex.currentIndex);
+    },
+    incrementTime() {
+      console.log("You invoked incrementTime!");
     }
   }
 }
