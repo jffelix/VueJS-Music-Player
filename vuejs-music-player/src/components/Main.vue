@@ -57,14 +57,24 @@ export default {
     startTimer() {
       this.songTime++
       this.isTimeRunning = !this.isTimeRunning;
+      this.interval = setInterval(this.incrementTime, 1000);
 
       console.log("songTime: ", this.songTime);
       console.log("isTimeRunning: ", this.isTimeRunning);
     },
+    incrementTime() {
+      this.songTime = parseInt(this.songTime) + 1;
+    },
     stopTime() {
       this.isTimeRunning = !this.isTimeRunning;
 
-      console.log("You invoked stopTime!");
+      console.log("songTime before stop: ", this.songTime);
+      this.songTime = 0
+
+      clearInterval(this.interval);
+
+      // console.log("You invoked stopTime!");
+      console.log("songTime: ", this.songTime);
       console.log("isTimeRunning: ", this.isTimeRunning);
     }
   }
