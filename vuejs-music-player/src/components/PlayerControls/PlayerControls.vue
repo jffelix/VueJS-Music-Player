@@ -36,7 +36,7 @@ export default {
         songList: Array,
         songIndex: Number
     },
-    emits: ["addItem", "subtractItem", "incrementTime", "stopTime"],
+    emits: ["addItem", "subtractItem", "startTimer", "stopTime"],
     methods: {
         prevSong() {
             this.$emit("subtractItem");
@@ -45,7 +45,7 @@ export default {
             this.$emit("addItem");
         },
         addTime() {
-            this.$emit("incrementTime");
+            this.$emit("startTimer");
         },
         resetTime() {
             this.$emit("stopTime");

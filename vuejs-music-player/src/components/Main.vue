@@ -8,7 +8,7 @@
         <PlayerControls 
           v-on:addItem="addCounter"
           v-on:subtractItem="subtractCounter"
-          v-on:incrementTime="incrementTime"
+          v-on:startTimer="startTimer"
           v-on:stopTime="stopTime"
           :songList="this.songList"
           :songIndex="this.songIndex"
@@ -32,7 +32,8 @@ export default {
       songList: sampleData,
       songIndex: {},
       songTime: 0,
-      isTimeRunning: false
+      isTimeRunning: false,
+      interval: null
     }
   },
   created() {
@@ -53,7 +54,7 @@ export default {
       }
       // console.log("songIndex: ", this.songIndex.currentIndex);
     },
-    incrementTime() {
+    startTimer() {
       this.songTime++
       this.isTimeRunning = !this.isTimeRunning;
 
@@ -62,7 +63,7 @@ export default {
     },
     stopTime() {
       this.isTimeRunning = !this.isTimeRunning;
-      
+
       console.log("You invoked stopTime!");
       console.log("isTimeRunning: ", this.isTimeRunning);
     }
