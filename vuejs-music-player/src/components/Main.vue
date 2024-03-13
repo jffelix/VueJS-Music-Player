@@ -31,7 +31,8 @@ export default {
     return {
       songList: sampleData,
       songIndex: {},
-      songTime: 0
+      songTime: 0,
+      isTimeRunning: false
     }
   },
   created() {
@@ -54,10 +55,16 @@ export default {
     },
     incrementTime() {
       this.songTime++
+      this.isTimeRunning = !this.isTimeRunning;
+
       console.log("songTime: ", this.songTime);
+      console.log("isTimeRunning: ", this.isTimeRunning);
     },
     stopTime() {
+      this.isTimeRunning = !this.isTimeRunning;
+      
       console.log("You invoked stopTime!");
+      console.log("isTimeRunning: ", this.isTimeRunning);
     }
   }
 }
