@@ -33,7 +33,8 @@ export default {
     },
     props: {
         songList: Array,
-        songIndex: Number
+        songIndex: Number,
+        songTime: Number
     },
     methods: {
         getImage() {
@@ -59,7 +60,7 @@ export default {
             return minutes.toString() + ":" + seconds.toString();
         },
         getCurrentSongTime() {
-            return this.secondsToMinutes(this.currentSongTime);
+            return this.secondsToMinutes(this.songTime);
         }
     }
 }

@@ -4,6 +4,7 @@
         <SongList
           :songList="this.songList"
           :songIndex="this.songIndex"
+          :songTime="this.songTime"
         />
         <PlayerControls 
           v-on:addItem="addCounter"
