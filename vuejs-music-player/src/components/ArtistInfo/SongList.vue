@@ -56,7 +56,12 @@ export default {
             var minutes = Math.floor(s % 3600 / 60);
             var seconds = Math.floor(s % 3600 % 60)
 
-            return minutes.toString() + ":" + seconds.toString();
+            if (seconds < 10) {
+                return minutes.toString() + ":0" + seconds.toString();
+            } else {
+                return minutes.toString() + ":" + seconds.toString();
+            }
+
         },
         getCurrentSongTime() {
             return this.secondsToMinutes(this.songTime);
