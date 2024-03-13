@@ -9,6 +9,7 @@
           v-on:addItem="addCounter"
           v-on:subtractItem="subtractCounter"
           v-on:incrementTime="incrementTime"
+          v-on:stopTime="stopTime"
           :songList="this.songList"
           :songIndex="this.songIndex"
         />
@@ -54,6 +55,9 @@ export default {
     incrementTime() {
       this.songTime++
       console.log("songTime: ", this.songTime);
+    },
+    stopTime() {
+      console.log("You invoked stopTime!");
     }
   }
 }

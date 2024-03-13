@@ -25,7 +25,7 @@ export default {
         songList: Array,
         songIndex: Number
     },
-    emits: ["addTime"],
+    emits: ["addTime", "resetTime"],
     methods: {
         pressPlay() {
             // let audio = this.songList[this.songIndex.currentIndex].songFile
@@ -47,7 +47,8 @@ export default {
         // currently stops song. No pause
         pressPause() {
             this.isSongPlaying = !this.isSongPlaying
-            console.log("Song stopped");
+            this.$emit("resetTime");
+            // console.log("Song stopped");
             this.currentSong.pause();
         }
     }
