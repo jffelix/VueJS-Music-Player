@@ -27,8 +27,7 @@ export default {
     data() {
         return {
             audioDuration: null,
-            convertedTime: null,
-            currentSongTime: 0
+            convertedTime: null
         }
     },
     props: {
