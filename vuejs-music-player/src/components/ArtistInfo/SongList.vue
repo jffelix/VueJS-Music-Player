@@ -64,6 +64,7 @@ export default {
 
         },
         getCurrentSongTime() {
+            // may have to check current time with duration here
             return this.secondsToMinutes(this.songTime);
         }
     }
