@@ -18,9 +18,9 @@ const testData = [
         albumCoverFile: "Martin Garrix - Starlight.jpg"
     },
     {
-        song: "A Note",
+        song: "Ode To Joy - Sample",
         artist: "Piano Key",
-        songFile: "notes_A.mp3",
+        songFile: "Ode to Joy - Sample.mp3",
         albumCoverFile: "Notes Visual.jpeg"
     }
 ]
