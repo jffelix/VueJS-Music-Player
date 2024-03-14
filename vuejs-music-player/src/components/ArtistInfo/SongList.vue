@@ -65,6 +65,10 @@ export default {
         },
         getCurrentSongTime() {
             // may have to check current time with duration here
+            if (this.songTime > this.audioDuration) {
+                console.log("song completed");
+            }
+
             return this.secondsToMinutes(this.songTime);
         }
     }
