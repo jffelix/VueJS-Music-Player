@@ -16,6 +16,12 @@ const testData = [
         artist: "Martin Garrix & Dubvision",
         songFile: "Martin Garrix, Dubvision ft. Shaun Farrugia - Starlight (Keep Me Afloat) (Extended Mix).mp3",
         albumCoverFile: "Martin Garrix - Starlight.jpg"
+    },
+    {
+        song: "A Note",
+        artist: "Piano Key",
+        songFile: "notes_A.mp3",
+        albumCoverFile: "Notes Visual.jpeg"
     }
 ]
 
