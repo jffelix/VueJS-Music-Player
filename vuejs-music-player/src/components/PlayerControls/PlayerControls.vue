@@ -37,16 +37,19 @@ export default {
         songIndex: Number
     },
     emits: ["addItem", "subtractItem", "startTimer", "stopTime"],
+    // mixins: [PlayButton],
+    // mounted() {
+    //     this.pressPause();
+    // },
     methods: {
         prevSong() {
             this.$emit("subtractItem");
-
             this.$emit("stopTime");
         },
         nextSong() {
             this.$emit("addItem");
-
             this.$emit("stopTime");
+            // console.log(this.pressPause)
         },
         // drill addTime and resetTime to nextButton & prevButton
         addTime() {

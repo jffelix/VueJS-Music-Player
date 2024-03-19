@@ -48,6 +48,8 @@ export default {
         pressPause() {
             this.isSongPlaying = !this.isSongPlaying
             this.$emit("resetTime");
+            // may be able to emit currentsong to parent
+            // this.$emit("resetTime", this.currentSong);
             // console.log("Song stopped");
             this.currentSong.pause();
         }
