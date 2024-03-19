@@ -37,6 +37,8 @@ export default {
     },
     methods: {
         getImage() {
+            // add placeholder image file
+            // create conditional for placeholder image
             return require(`../../assets/sampleAlbumCovers/${this.songList[this.songIndex.currentIndex].albumCoverFile}`)
         },
         getAudioDuration () {
