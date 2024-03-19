@@ -40,9 +40,13 @@ export default {
     methods: {
         prevSong() {
             this.$emit("subtractItem");
+
+            this.$emit("stopTime");
         },
         nextSong() {
             this.$emit("addItem");
+
+            this.$emit("stopTime");
         },
         // drill addTime and resetTime to nextButton & prevButton
         addTime() {
