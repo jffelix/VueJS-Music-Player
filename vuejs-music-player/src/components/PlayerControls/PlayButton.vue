@@ -41,8 +41,6 @@ export default {
                 this.$emit("addTime");
                 this.currentSong.play();
             }
-
-            // add increment counter for current song time here
         },
         // currently stops song. No pause
         pressPause() {
@@ -50,6 +48,7 @@ export default {
             this.$emit("resetTime");
             // may be able to emit currentsong to parent
             // this.$emit("resetTime", this.currentSong);
+            
             // console.log("Song stopped");
             this.currentSong.pause();
         }

@@ -75,7 +75,6 @@ export default {
 
       clearInterval(this.interval);
 
-      // console.log("You invoked stopTime!");
       // console.log("songTime: ", this.songTime);
       // console.log("isTimeRunning: ", this.isTimeRunning);
     }

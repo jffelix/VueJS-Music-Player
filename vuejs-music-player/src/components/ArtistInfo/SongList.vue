@@ -71,7 +71,6 @@ export default {
                 this.$emit("stopTime");
                 // will need to change "stop" button to "play" after
             }
-
             return this.secondsToMinutes(this.songTime);
         }
     }
