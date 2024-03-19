@@ -35,6 +35,7 @@ export default {
         songIndex: Object,
         songTime: Number
     },
+    emits: ["stopTime"],
     methods: {
         getImage() {
             // add placeholder image file
@@ -65,9 +66,10 @@ export default {
 
         },
         getCurrentSongTime() {
-            // may have to check current time with duration here
             if (this.songTime > this.audioDuration) {
-                console.log("song completed");
+                // console.log("song completed");
+                this.$emit("stopTime");
+                // will need to change "stop" button to "play" after
             }
 
             return this.secondsToMinutes(this.songTime);
