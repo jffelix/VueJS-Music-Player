@@ -51,7 +51,6 @@ export default {
             this.$emit("stopTime");
             // console.log(this.pressPause)
         },
-        // drill addTime and resetTime to nextButton & prevButton
         addTime() {
             this.$emit("startTimer");
         },
