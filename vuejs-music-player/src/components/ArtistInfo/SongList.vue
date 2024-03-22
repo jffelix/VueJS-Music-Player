@@ -38,9 +38,18 @@ export default {
     emits: ["stopTime"],
     methods: {
         getImage() {
+            let albumImage = require(`../../assets/sampleAlbumCovers/${this.songList[this.songIndex.currentIndex].albumCoverFile}`)
+
             // add placeholder image file
             // create conditional for placeholder image
-            return require(`../../assets/sampleAlbumCovers/${this.songList[this.songIndex.currentIndex].albumCoverFile}`)
+
+            // if (albumCoverFile === null) {
+            //     return require(`../../assets/sampleAlbumCovers/Album Cover Placeholder Image.jpeg`) ;
+            // }
+
+            return albumImage
+
+            // return require(`../../assets/sampleAlbumCovers/${this.songList[this.songIndex.currentIndex].albumCoverFile}`)
         },
         getAudioDuration () {
             const selectedAudio = require(`../../assets/sampleSongs/${this.songList[this.songIndex.currentIndex].songFile}`)
