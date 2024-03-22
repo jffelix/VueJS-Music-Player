@@ -10,9 +10,16 @@
 }
 
 .currentSongTime {
-    padding: 10px;
+    padding: 15px;
 }
 
 .audioDuration {
-    padding: 10px;
+    padding: 15px;
+}
+
+.seekBar {
+    height: 1%;
+    width: 70%;
+    border-style: solid;
+    margin-top: 30px;
 }

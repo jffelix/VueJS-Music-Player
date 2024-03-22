@@ -10,6 +10,7 @@
             <div className="currentSongTime">
                 <p>{{getCurrentSongTime()}}</p>
             </div>
+            <div className="seekBar"></div>
             <div className="audioDuration">
                 <p>{{getAudioDuration()}}</p>
             </div>
