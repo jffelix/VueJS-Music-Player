@@ -42,6 +42,7 @@ export default {
 
             // add placeholder image file
             // create conditional for placeholder image
+            
             return albumImage;
         },
         getAudioDuration () {
