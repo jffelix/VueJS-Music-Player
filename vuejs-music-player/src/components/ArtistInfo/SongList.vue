@@ -7,10 +7,12 @@
             />
         </div>
         <div>
-            <p>{{getCurrentSongTime()}}</p>
-        </div>
-        <div>
-            <p>{{getAudioDuration()}}</p>
+            <div>
+                <p>{{getCurrentSongTime()}}</p>
+            </div>
+            <div>
+                <p>{{getAudioDuration()}}</p>
+            </div>
         </div>
         <div>
             <p>{{songList[songIndex.currentIndex].song}}</p>
