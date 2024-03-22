@@ -6,11 +6,11 @@
                 :src="getImage()"
             />
         </div>
-        <div>
-            <div>
+        <div className="songTime">
+            <div className="currentSongTime">
                 <p>{{getCurrentSongTime()}}</p>
             </div>
-            <div>
+            <div className="audioDuration">
                 <p>{{getAudioDuration()}}</p>
             </div>
         </div>
