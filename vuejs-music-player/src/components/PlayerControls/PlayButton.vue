@@ -18,7 +18,6 @@ export default {
             isSongPlaying: false,
             currentSong: null
             // selectedAudio
-
         }
     },
     props: {
