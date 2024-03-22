@@ -42,14 +42,7 @@ export default {
 
             // add placeholder image file
             // create conditional for placeholder image
-
-            // if (albumCoverFile === null) {
-            //     return require(`../../assets/sampleAlbumCovers/Album Cover Placeholder Image.jpeg`) ;
-            // }
-
-            return albumImage
-
-            // return require(`../../assets/sampleAlbumCovers/${this.songList[this.songIndex.currentIndex].albumCoverFile}`)
+            return albumImage;
         },
         getAudioDuration () {
             const selectedAudio = require(`../../assets/sampleSongs/${this.songList[this.songIndex.currentIndex].songFile}`)

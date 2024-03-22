@@ -21,7 +21,7 @@ const testData = [
         song: "Ode To Joy - Sample",
         artist: "Piano Key",
         songFile: "Ode to Joy - Sample.mp3",
-        albumCoverFile: "Notes Visual.jpeg"
+        albumCoverFile: "Album Cover Placeholder Image.jpeg"
     }
 ]
 
