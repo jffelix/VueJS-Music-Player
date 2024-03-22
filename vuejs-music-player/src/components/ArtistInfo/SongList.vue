@@ -15,9 +15,13 @@
                 <p>{{getAudioDuration()}}</p>
             </div>
         </div>
-        <div>
-            <p>{{songList[songIndex.currentIndex].song}}</p>
-            <p>{{songList[songIndex.currentIndex].artist}}</p>
+        <div className="songInfo">
+            <div className="songName">
+                <p>{{songList[songIndex.currentIndex].song}}</p>
+            </div>
+            <div className="songArtist">
+                <p>{{songList[songIndex.currentIndex].artist}}</p>
+            </div>
         </div>
     </div>
 </template>

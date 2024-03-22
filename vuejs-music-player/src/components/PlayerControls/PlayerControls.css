@@ -1,0 +1,17 @@
+.controlButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.prevButton {
+    margin: 0 20px
+}
+
+.playButton {
+    margin: 0 20px
+}
+
+.nextButton {
+    margin: 0 20px
+}

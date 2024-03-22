@@ -1,12 +1,9 @@
 <template>
-    <div>
-        <!-- <div>
-            <h2>PlayerControls Component</h2>
-        </div> -->
-        <div>
+    <div className="controlButtons">
+        <div className="prevButton">
             <PrevButton v-on:click="prevSong"/>
         </div>
-        <div>
+        <div className="playButton">
             <PlayButton 
                 v-on:addTime="addTime"
                 v-on:resetTime="resetTime"
@@ -14,7 +11,7 @@
                 :songIndex="this.songIndex"
             />
         </div>
-        <div>
+        <div className="nextButton">
             <NextButton v-on:click="nextSong"/>
         </div>
     </div>
@@ -24,6 +21,7 @@
 import NextButton from "./NextButton.vue"
 import PlayButton from "./PlayButton.vue"
 import PrevButton from "./PrevButton.vue"
+import "./PlayerControls.css"
 
 export default {
     name: "PlayerControls",
