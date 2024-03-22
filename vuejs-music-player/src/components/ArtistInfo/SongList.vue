@@ -1,7 +1,10 @@
 <template>
     <div>
         <div>
-            <img :src="getImage()"/>
+            <img 
+                className="albumCover"
+                :src="getImage()"
+            />
         </div>
         <div>
             <p>{{getCurrentSongTime()}}</p>
@@ -19,6 +22,7 @@
 <script>
 // remember to delete AlbumCover.vue
 // import AlbumCover from './AlbumCover.vue'
+import "./SongList.css"
 
 export default {
     name: "SongList",
@@ -42,7 +46,7 @@ export default {
 
             // add placeholder image file
             // create conditional for placeholder image
-            
+
             return albumImage;
         },
         getAudioDuration () {
