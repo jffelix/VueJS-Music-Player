@@ -6,6 +6,14 @@
                 :src="getImage()"
             />
         </div>
+        <div className="songInfo">
+            <div className="songName">
+                <p>{{songList[songIndex.currentIndex].song}}</p>
+            </div>
+            <div className="songArtist">
+                <p>{{songList[songIndex.currentIndex].artist}}</p>
+            </div>
+        </div>
         <div className="songTime">
             <div className="currentSongTime">
                 <p>{{getCurrentSongTime()}}</p>
@@ -13,14 +21,6 @@
             <div className="seekBar"></div>
             <div className="audioDuration">
                 <p>{{getAudioDuration()}}</p>
-            </div>
-        </div>
-        <div className="songInfo">
-            <div className="songName">
-                <p>{{songList[songIndex.currentIndex].song}}</p>
-            </div>
-            <div className="songArtist">
-                <p>{{songList[songIndex.currentIndex].artist}}</p>
             </div>
         </div>
     </div>
