@@ -1,15 +1,27 @@
 <template>
     <div>
         <div v-if="isSongPlaying">
-            <button v-on:click="pressPause()">Stop</button>
+            <img 
+                src="../../assets/playerControlButtons/PauseButton.png"
+                className="playButtonImage"
+                v-on:click="pressPause()"
+            />
+            <!-- <button v-on:click="pressPause()">Stop</button> -->
         </div>
         <div v-else>
-            <button v-on:click="pressPlay()">Play</button>
+            <img 
+                src="../../assets/playerControlButtons/PlayButton.png"
+                className="pauseButtonImage"
+                v-on:click="pressPlay()"
+            />
+            <!-- <button v-on:click="pressPlay()">Play</button> -->
         </div>
     </div>
 </template>
 
 <script>
+
+import "./PlayButton.css"
 
 export default {
     name: "PlayButton",
