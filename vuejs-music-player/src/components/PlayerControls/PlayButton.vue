@@ -65,6 +65,7 @@ export default {
             
             // when song is over, icon is still at pause
                 // need to switch to play when finished
+                // need to auto play to next song
         }
     }
 }
