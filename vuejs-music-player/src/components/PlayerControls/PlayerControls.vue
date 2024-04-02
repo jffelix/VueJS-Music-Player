@@ -21,7 +21,7 @@
 import NextButton from "./NextButton.vue"
 import PlayButton from "./PlayButton.vue"
 import PrevButton from "./PrevButton.vue"
-import "./PlayerControls.css"
+import "./PlayerControls.scss"
 
 export default {
     name: "PlayerControls",
