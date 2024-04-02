@@ -9,7 +9,7 @@
 
 <script>
 
-import "./NextButton.css"
+import "./NextButton.scss"
 
 export default {
     name: "NextButton"
