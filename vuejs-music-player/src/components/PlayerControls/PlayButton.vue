@@ -62,6 +62,9 @@ export default {
             
             // console.log("Song stopped");
             this.currentSong.pause();
+            
+            // when song is over, icon is still at pause
+                // need to switch to play when finished
         }
     }
 }
