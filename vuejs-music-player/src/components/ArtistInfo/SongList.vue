@@ -29,7 +29,7 @@
 <script>
 // remember to delete AlbumCover.vue
 // import AlbumCover from './AlbumCover.vue'
-import "./SongList.css"
+import "./SongList.scss"
 
 export default {
     name: "SongList",
