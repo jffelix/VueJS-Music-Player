@@ -21,7 +21,7 @@
 
 <script>
 
-import "./PlayButton.css"
+import "./PlayButton.scss"
 
 export default {
     name: "PlayButton",
