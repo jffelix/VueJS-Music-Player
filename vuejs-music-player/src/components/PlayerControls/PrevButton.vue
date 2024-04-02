@@ -10,7 +10,7 @@
 
 <script>
 
-import "./PrevButton.css"
+import "./PrevButton.scss"
 
 export default {
     name: "PrevButton"
