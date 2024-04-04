@@ -24,6 +24,7 @@
 import PlayerControls from './PlayerControls/PlayerControls.vue'
 import SongList from './ArtistInfo/SongList.vue'
 import sampleData from '../assets/sampleData.js'
+import './Main.scss'
 
 export default {
   name: 'Main',
