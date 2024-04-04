@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div className="main">
         <div className="mainTitle">
             <h1>VueJS Music Player</h1>
         </div>
