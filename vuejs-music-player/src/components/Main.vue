@@ -69,6 +69,7 @@ export default {
     },
     incrementTime() {
       this.songTime = parseInt(this.songTime) + 1;
+      // possible to check if song is completed here
     },
     stopTime() {
       this.isTimeRunning = !this.isTimeRunning;
