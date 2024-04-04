@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h1>VueJS Music Player</h1>
+        <div className="mainTitle">
+            <h1>VueJS Music Player</h1>
+        </div>
         <SongList
           :songList="this.songList"
           :songIndex="this.songIndex"
