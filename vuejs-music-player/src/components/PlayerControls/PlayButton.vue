@@ -2,7 +2,7 @@
     <div>
         <div v-if="isSongPlaying">
             <img 
-                src="../../assets/playerControlButtons/PauseButton.png"
+                src="../../assets/playerControlButtons/StopButton.png"
                 className="playButtonImage"
                 v-on:click="pressPause()"
             />
