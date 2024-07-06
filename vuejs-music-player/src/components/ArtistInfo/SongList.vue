@@ -18,7 +18,10 @@
             <div className="currentSongTime">
                 <p>{{getCurrentSongTime()}}</p>
             </div>
-            <div className="seekBar"></div>
+            <!-- <div className="seekBar"></div> -->
+            <div className="seekBar">
+                <input type="range" min="0" max="100"/>
+            </div>
             <div className="audioDuration">
                 <p>{{getAudioDuration()}}</p>
             </div>
