@@ -40,6 +40,13 @@
 //     margin-top: 20px;
 // }
 
+.seekBar input {
+    height: 1%;
+    width: 100%;
+    border-style: solid;
+    margin-top: 20px;
+}
+
 @media (max-width: 1300px) {
     .albumCover {
         width: 225px;
