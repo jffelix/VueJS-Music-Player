@@ -20,7 +20,12 @@
             </div>
             <!-- <div className="seekBar"></div> -->
             <div className="seekBar">
-                <input type="range" min="0" max="100" value="0"/>
+                <input 
+                    type="range" 
+                    min="0" 
+                    max="100" 
+                    v-bind:value="this.seekBarValue"
+                />
             </div>
             <div className="audioDuration">
                 <p>{{getAudioDuration()}}</p>
@@ -41,7 +46,8 @@ export default {
     data() {
         return {
             audioDuration: null,
-            convertedTime: null
+            convertedTime: null,
+            seekBarValue: 0
         }
     },
     props: {
@@ -89,6 +95,10 @@ export default {
                 // will need to change "stop" button to "play" after
             }
             return this.secondsToMinutes(this.songTime);
+        },
+        incrementSeekbarMarker() {
+            // need to increment seekBarValue relative to song duration
+            return 0;
         }
     }
 }
