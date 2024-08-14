@@ -52,6 +52,7 @@ export default {
                 this.$emit("addTime");
                 this.currentSong.play();
             }
+            // will need to link to song duration
         },
         // currently stops song. No pause
         pressPause() {
