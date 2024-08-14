@@ -67,6 +67,8 @@ export default {
             // when song is over, icon is still at pause
                 // need to switch to play when finished
                 // need to auto play to next song
+
+            // when song is over, reset seek bar to 0
         }
     }
 }
