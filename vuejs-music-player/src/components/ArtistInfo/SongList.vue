@@ -20,7 +20,7 @@
             </div>
             <!-- <div className="seekBar"></div> -->
             <div className="seekBar">
-                <input type="range" min="0" max="100"/>
+                <input type="range" min="0" max="100" value="0"/>
             </div>
             <div className="audioDuration">
                 <p>{{getAudioDuration()}}</p>
