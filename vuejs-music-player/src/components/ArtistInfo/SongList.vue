@@ -100,6 +100,7 @@ export default {
             // will invoke function in v-bind: value
             // need to increment seekBarValue relative to song duration
                 // divide song duration time by 100
+                    // every x amount of seconds = 1% to value
             console.log("Hello from incrementSeekbarMarker!");
             return seekBarVal;
         }
