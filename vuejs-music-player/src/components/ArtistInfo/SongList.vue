@@ -95,6 +95,11 @@ export default {
                 // will need to change "stop" button to "play" after
             }
             return this.secondsToMinutes(this.songTime);
+        },
+        incrementSeekbarMarker(seekBarVal) {
+            // need to increment seekBarValue relative to song duration
+            console.log("Hello from incrementSeekbarMarker!");
+            return 0;
         }
     }
 }
