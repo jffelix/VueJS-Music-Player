@@ -24,7 +24,7 @@
                     type="range" 
                     min="0" 
                     max="100" 
-                    v-bind:value="incrementSeekbarMarker(this.seekBarValue)"
+                    v-bind:value="this.seekBarValue"
                 />
             </div>
             <div className="audioDuration">
@@ -101,7 +101,9 @@ export default {
             // need to increment seekBarValue relative to song duration
                 // divide song duration time by 100
                     // every x amount of seconds = 1% to value
-            console.log("Hello from incrementSeekbarMarker!");
+            let songDuration = this.audioDuration;
+            console.log("songDuration: ", songDuration);
+
             return seekBarVal;
         }
     }
