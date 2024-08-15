@@ -97,18 +97,16 @@ export default {
             return this.secondsToMinutes(this.songTime);
         },
         incrementSeekbarMarker() {
-            // will invoke function in v-bind: value
-            // need to increment seekBarValue relative to song duration
-                // divide song duration time by 100
-                    // every x amount of seconds = 1% to value
+            // set the input max to songduration
+            // invoke current song time in value
+                // marker will constantly update relative to max
             // function should invoke similar to getCurrentSongtime
                 // every 1000 in setTimeout
-                    // accidental recursion when increment seekBarValue
-            let songDuration = this.audioDuration;
-            let currentSongTime = this.songTime;
+            // let songDuration = this.audioDuration;
             // console.log("songDuration: ", songDuration);
             // console.log("currentSongTime: ", currentSongTime);
-
+            
+            let currentSongTime = this.songTime;
             return currentSongTime;
         }
     }
