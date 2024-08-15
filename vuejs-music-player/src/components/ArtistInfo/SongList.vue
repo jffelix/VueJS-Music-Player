@@ -106,9 +106,9 @@ export default {
                     // accidental recursion when increment seekBarValue
             let songDuration = this.audioDuration;
             let currentSongTime = this.songTime;
-            console.log("songDuration: ", songDuration);
-            console.log("currentSongTime: ", currentSongTime);
-            
+            // console.log("songDuration: ", songDuration);
+            // console.log("currentSongTime: ", currentSongTime);
+
             return currentSongTime;
         }
     }
