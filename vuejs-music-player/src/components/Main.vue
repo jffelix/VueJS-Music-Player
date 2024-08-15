@@ -81,6 +81,11 @@ export default {
 
       // console.log("songTime: ", this.songTime);
       // console.log("isTimeRunning: ", this.isTimeRunning);
+    },
+    incrementSeekbarMarker(seekBarVal) {
+      // need to increment seekBarValue relative to song duration
+      console.log("Hello from incrementSeekbarMarker!");
+      return 0;
     }
   }
 }
