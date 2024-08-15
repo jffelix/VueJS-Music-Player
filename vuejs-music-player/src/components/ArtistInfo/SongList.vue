@@ -23,7 +23,7 @@
                 <input 
                     type="range" 
                     min="0" 
-                    max="100" 
+                    v-bind:max="this.audioDuration" 
                     v-bind:value="incrementSeekbarMarker()"
                 />
             </div>
@@ -108,8 +108,7 @@ export default {
             let currentSongTime = this.songTime;
             console.log("songDuration: ", songDuration);
             console.log("currentSongTime: ", currentSongTime);
-
-            // seekBar moves, but 1 per second
+            
             return currentSongTime;
         }
     }
