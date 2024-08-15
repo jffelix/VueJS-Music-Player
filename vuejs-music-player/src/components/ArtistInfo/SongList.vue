@@ -103,8 +103,11 @@ export default {
                     // every x amount of seconds = 1% to value
             // function should invoke similar to getCurrentSongtime
                 // every 1000 in setTimeout
+                    // accidental recursion when increment seekBarValue
             let songDuration = this.audioDuration;
+            let currentSongTime = this.songTime;
             console.log("songDuration: ", songDuration);
+            console.log("currentSongTime: ", currentSongTime);
 
             return seekBarVal;
         }
