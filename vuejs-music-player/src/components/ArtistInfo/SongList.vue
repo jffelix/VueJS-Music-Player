@@ -46,8 +46,7 @@ export default {
     data() {
         return {
             audioDuration: null,
-            convertedTime: null,
-            seekBarValue: 0
+            convertedTime: null
         }
     },
     props: {
@@ -105,7 +104,7 @@ export default {
             // let songDuration = this.audioDuration;
             // console.log("songDuration: ", songDuration);
             // console.log("currentSongTime: ", currentSongTime);
-            
+
             let currentSongTime = this.songTime;
             return currentSongTime;
         }
