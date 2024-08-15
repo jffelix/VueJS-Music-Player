@@ -65,7 +65,7 @@ export default {
 
             return albumImage;
         },
-        getAudioDuration () {
+        getAudioDuration() {
             const selectedAudio = require(`../../assets/sampleSongs/${this.songList[this.songIndex.currentIndex].songFile}`)
 
             let audioFile = new Audio(selectedAudio);
