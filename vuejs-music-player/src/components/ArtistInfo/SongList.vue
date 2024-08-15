@@ -98,6 +98,7 @@ export default {
         },
         incrementSeekbarMarker() {
             // need to increment seekBarValue relative to song duration
+            console.log("Hello from incrementSeekbarMarker!")
             return 0;
         }
     }
