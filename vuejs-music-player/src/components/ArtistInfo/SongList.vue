@@ -98,17 +98,11 @@ export default {
             return this.secondsToMinutes(this.songTime);
         },
         incrementSeekbarMarker() {
-            // set the input max to songduration
-            // invoke current song time in value
-                // marker will constantly update relative to max
-            // function should invoke similar to getCurrentSongtime
-                // every 1000 in setTimeout
-            // let songDuration = this.audioDuration;
-            // console.log("songDuration: ", songDuration);
-            // console.log("currentSongTime: ", currentSongTime);
-
             let currentSongTime = this.songTime;
             return currentSongTime;
+        },
+        stopToPlayButton() {
+            return 0;
         }
     }
 }
