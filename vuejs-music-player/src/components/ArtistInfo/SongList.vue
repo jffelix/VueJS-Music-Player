@@ -92,6 +92,9 @@ export default {
                 this.$emit("stopTime");
                 // will need to change "stop" button to "play" after
             }
+            // check if song is completed
+                // invoke function to change play button to stop
+
             return this.secondsToMinutes(this.songTime);
         },
         incrementSeekbarMarker() {
