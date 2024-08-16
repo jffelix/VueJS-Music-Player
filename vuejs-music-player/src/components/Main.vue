@@ -7,7 +7,8 @@
           :songList="this.songList"
           :songIndex="this.songIndex"
           :songTime="this.songTime"
-          v-on:stopTime="stopTime"         
+          v-on:stopTime="stopTime"
+          v-model="this.isSongCompleted"         
         />
         <PlayerControls 
           v-on:addItem="addCounter"
@@ -38,7 +39,8 @@ export default {
       songIndex: {},
       songTime: 0,
       isTimeRunning: false,
-      interval: null
+      interval: null,
+      isSongCompleted: false
     }
   },
   created() {
@@ -66,6 +68,9 @@ export default {
 
       // console.log("songTime: ", this.songTime);
       // console.log("isTimeRunning: ", this.isTimeRunning);
+
+      // testing state change from child to parent
+      console.log("isSongCompleted: ", this.isSongCompleted);
     },
     incrementTime() {
       this.songTime = parseInt(this.songTime) + 1;

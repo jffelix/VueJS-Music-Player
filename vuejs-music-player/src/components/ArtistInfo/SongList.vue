@@ -51,7 +51,8 @@ export default {
     props: {
         songList: Array,
         songIndex: Object,
-        songTime: Number
+        songTime: Number,
+        isSongCompleted: Boolean
     },
     emits: ["stopTime"],
     methods: {
@@ -91,6 +92,10 @@ export default {
                 // console.log("song completed");
                 this.$emit("stopTime");
                 // will need to change "stop" button to "play" after
+                // cannot change parent state from child
+                
+                // this.isSongCompleted = !this.isSongCompleted;
+                // console.log("isSongCompleted stop: ", this.isSongCompleted)
             }
             // check if song is completed
                 // invoke function to change play button to stop
@@ -100,16 +105,16 @@ export default {
         incrementSeekbarMarker() {
             let currentSongTime = this.songTime;
             return currentSongTime;
-        },
-        changeStopToPlayButton(stopFunc) {
-            // emit audioDuration to parent
-            // drill emit to playButton
-            // if songTime passes audioDuration
-                // invoke argument function
-                // or change state to false?
-            // songTime is already in parent component
-            return 0;
         }
+        // changeStopToPlayButton(stopFunc) {
+        //     // emit audioDuration to parent
+        //     // drill emit to playButton
+        //     // if songTime passes audioDuration
+        //         // invoke argument function
+        //         // or change state to false?
+        //     // songTime is already in parent component
+        //     return 0;
+        // }
     }
 }
 
