@@ -101,7 +101,13 @@ export default {
             let currentSongTime = this.songTime;
             return currentSongTime;
         },
-        stopToPlayButton() {
+        changeStopToPlayButton(stopFunc) {
+            // emit songTime and audioDuration to parent
+            // drill emits to playButton
+            // if songTime passes audioDuration
+                // invoke argument function
+                // or change state to false?
+            // songTime is already in parent component?
             return 0;
         }
     }
