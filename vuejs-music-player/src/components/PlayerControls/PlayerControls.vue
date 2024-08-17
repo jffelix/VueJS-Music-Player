@@ -9,6 +9,7 @@
                 v-on:resetTime="resetTime"
                 :songList="this.songList"
                 :songIndex="this.songIndex"
+                :songTime="this.songTime"
             />
         </div>
         <div className="nextButton">
@@ -32,7 +33,8 @@ export default {
     },
     props: {
         songList: Array,
-        songIndex: Number
+        songIndex: Number,
+        songTime: Number
     },
     emits: ["addItem", "subtractItem", "startTimer", "stopTime"],
     // mixins: [PlayButton],

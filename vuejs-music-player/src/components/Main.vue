@@ -17,6 +17,7 @@
           v-on:stopTime="stopTime"
           :songList="this.songList"
           :songIndex="this.songIndex"
+          :songTime="this.songTime"
         />
     </div>
 </template>
@@ -39,8 +40,7 @@ export default {
       songIndex: {},
       songTime: 0,
       isTimeRunning: false,
-      interval: null,
-      isSongCompleted: false
+      interval: null
     }
   },
   created() {
@@ -68,9 +68,6 @@ export default {
 
       // console.log("songTime: ", this.songTime);
       // console.log("isTimeRunning: ", this.isTimeRunning);
-
-      // testing state change from child to parent
-      console.log("isSongCompleted: ", this.isSongCompleted);
     },
     incrementTime() {
       this.songTime = parseInt(this.songTime) + 1;
