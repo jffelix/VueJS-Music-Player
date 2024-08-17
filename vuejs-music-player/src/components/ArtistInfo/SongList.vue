@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div className="songList">
         <div>
             <img 
                 className="albumCover"
