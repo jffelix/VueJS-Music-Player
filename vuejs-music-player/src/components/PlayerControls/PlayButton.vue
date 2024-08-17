@@ -6,7 +6,6 @@
                 className="playButtonImage"
                 v-on:click="pressPause()"
             />
-            <!-- <button v-on:click="pressPause()">Stop</button> -->
         </div>
         <!-- <div v-else-if="isSongPlaying === false || songTime === 0"> -->
         <div v-else>
@@ -15,7 +14,6 @@
                 className="pauseButtonImage"
                 v-on:click="pressPlay()"
             />
-            <!-- <button v-on:click="pressPlay()">Play</button> -->
         </div>
     </div>
 </template>
