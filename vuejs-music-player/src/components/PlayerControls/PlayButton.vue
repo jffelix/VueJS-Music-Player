@@ -7,7 +7,7 @@
                 v-on:click="pressPause()"
             />
         </div>
-        <!-- <div v-else-if="isSongPlaying === false || songTime === 0"> -->
+        <!-- <div v-else-if="isSongPlaying === false || this.songTime === 0"> -->
         <div v-else>
             <img 
                 src="../../assets/playerControlButtons/PlayButton.png"
@@ -53,7 +53,8 @@ export default {
                 this.currentSong.play();
             }
             // will need to link to song duration
-            console.log("songTime: ", this.songTime)
+            
+            // console.log("songTime: ", this.songTime)
         },
         // currently stops song. No pause
         pressPause() {
