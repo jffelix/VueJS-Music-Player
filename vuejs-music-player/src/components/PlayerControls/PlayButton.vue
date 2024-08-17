@@ -7,7 +7,7 @@
                 v-on:click="pressPause()"
             />
         </div>
-        <!-- <div v-else-if="isSongPlaying === false || this.songTime === 0"> -->
+        <!-- <div v-else-if="isSongPlaying === false || checkIfSongAtZero() === true"> -->
         <div v-else>
             <img 
                 src="../../assets/playerControlButtons/PlayButton.png"
@@ -15,6 +15,7 @@
                 v-on:click="pressPlay()"
             />
         </div>
+        <!-- <div>{{checkIfSongAtZero()}}</div> -->
     </div>
 </template>
 
@@ -70,6 +71,14 @@ export default {
                 // need to switch to play when finished
                 // need to auto play to next song
         }
+        // checkIfSongAtZero() {
+        //     console.log("songTime: ", this.songTime)
+        //     if (this.songTime === 0) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
     }
 }
 
