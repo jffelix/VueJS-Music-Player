@@ -3,7 +3,7 @@
         <div v-if="isSongPlaying">
             <img 
                 src="../../assets/playerControlButtons/StopButton.png"
-                className="playButtonImage"
+                className="pauseButtonImage"
                 v-on:click="pressPause()"
             />
         </div>
@@ -11,11 +11,12 @@
         <div v-else>
             <img 
                 src="../../assets/playerControlButtons/PlayButton.png"
-                className="pauseButtonImage"
+                className="playButtonImage"
                 v-on:click="pressPlay()"
             />
         </div>
         <!-- <div>{{checkIfSongAtZero()}}</div> -->
+        <!-- <div>{{isSongPlaying}}</div> -->
     </div>
 </template>
 
