@@ -54,14 +54,14 @@
     accent-color: black;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 950px) {
     .albumCover {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1249px) {
+@media (min-width: 951px) and (max-width: 1249px) {
     .albumCover {
         width: 250px;
         height: 250px;
