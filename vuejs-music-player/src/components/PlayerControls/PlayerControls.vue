@@ -33,7 +33,8 @@ export default {
     },
     props: {
         songList: Array,
-        songIndex: Number,
+        // songIndex: Number,
+        songIndex: Object,
         songTime: Number
     },
     emits: ["addItem", "subtractItem", "startTimer", "stopTime"],
