@@ -57,6 +57,11 @@ export default {
             // will need to link to song duration
             
             // console.log("songTime: ", this.songTime)
+
+            // create a v-model in parent
+                // prop drill to PlayButton
+                    // when pressPlay is clicked
+                        // change state
         },
         // currently stops song. No pause
         pressPause() {
