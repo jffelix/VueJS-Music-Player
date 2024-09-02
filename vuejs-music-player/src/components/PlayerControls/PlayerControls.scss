@@ -15,3 +15,17 @@
 .nextButton {
     margin: 10px 20px
 }
+
+@media (max-width: 730px) {
+    .prevButton {
+        margin: 5px 10px
+    }
+    
+    .playButton {
+        margin: 0 10px;
+    }
+    
+    .nextButton {
+        margin: 5px 10px;
+    }
+}
