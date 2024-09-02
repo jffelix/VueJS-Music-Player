@@ -35,7 +35,6 @@ export default {
     },
     props: {
         songList: Array,
-        // songIndex: Number,
         songIndex: Object,
         songTime: Number
     },
