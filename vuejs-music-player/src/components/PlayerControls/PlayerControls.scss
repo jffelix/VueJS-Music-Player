@@ -5,7 +5,7 @@
 }
 
 .prevButton {
-    margin: 10px 20px
+    margin: 10px 20px;
 }
 
 .playButton {
@@ -13,19 +13,19 @@
 }
 
 .nextButton {
-    margin: 10px 20px
+    margin: 10px 20px;
 }
 
-@media (max-width: 730px) {
-    .prevButton {
-        margin: 5px 10px
-    }
+// @media (max-width: 730px) {
+//     .prevButton {
+//         margin: 5px 10px;
+//     }
     
-    .playButton {
-        margin: 0 0;
-    }
+//     .playButton {
+//         margin: 0 0;
+//     }
     
-    .nextButton {
-        margin: 5px 10px;
-    }
-}
+//     .nextButton {
+//         margin: 5px 10px;
+//     }
+// }
