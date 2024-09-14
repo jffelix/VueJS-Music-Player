@@ -1,6 +1,6 @@
 # VueJS-Music-Player
 
-Welcome to the music player created with VueJS! This is a basic media player that comes with the standard functions.
+Welcome to my music player created with VueJS! This is a basic media player that comes with the standard functions. Press play and enjoy!
 
 
 ## Notable Functions
