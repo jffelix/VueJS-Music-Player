@@ -6,6 +6,7 @@ Welcome to the music player created with VueJS! This is a basic media player tha
 ## Notable Functions
 - Standard music player buttons (Play, Stop, Previous, Next)
 - Pre-made playlist for testing
+- A seek bar that displays song progression in real-time
 
 ## How to run application
 - Navigate to the vuejs-music-player folder in the Terminal
