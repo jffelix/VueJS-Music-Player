@@ -6,3 +6,8 @@ Welcome to the music player created with VueJS! This is a basic media player tha
 ## Notable Functions
 - Standard music player buttons (Play, Stop, Previous, Next)
 - Pre-made playlist for testing
+
+## How to run application
+- Navigate to the vuejs-music-player folder
+- Run "npm run serve"
+- Open Google Chrome and navigate to given link for localhost
