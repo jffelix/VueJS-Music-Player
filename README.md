@@ -9,5 +9,5 @@ Welcome to the music player created with VueJS! This is a basic media player tha
 
 ## How to run application
 - Navigate to the vuejs-music-player folder
-- Run "npm run serve"
+- Run "npm run serve" in the Terminal
 - Open Google Chrome and navigate to given link for localhost
