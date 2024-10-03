@@ -2,7 +2,6 @@
 
 Welcome to my music player created with VueJS! This is a basic media player that comes with the standard functions. Press play and enjoy!
 
-
 ## Notable Functions
 - Standard music player buttons (Play, Stop, Previous, Next)
 - Pre-made playlist for testing
